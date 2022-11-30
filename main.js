@@ -3,7 +3,7 @@ const chrome = require('selenium-webdriver/chrome');
 const firefox = require('selenium-webdriver/firefox');
 const safari = require('selenium-webdriver/safari');
 
-const BROWSER = 'chrome';
+const BROWSER = 'safari';
 
 let driver = new Builder()
   .forBrowser(BROWSER)
