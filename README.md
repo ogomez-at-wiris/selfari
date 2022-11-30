@@ -11,4 +11,4 @@ Steps.
 3. Type the following command: `safaridriver --enable`. It will ask for a apssword, it's your mac username password.
 4. Run `npm start`.
 
-It should run Safari, start a Google search, show the results, and close. The console will say: "Found title".
+It should run Safari, start with some random dude's homepage, show the page for a very short time, and close. The console will say: "Found title".

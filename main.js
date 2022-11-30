@@ -3,7 +3,7 @@ const chrome = require('selenium-webdriver/chrome');
 const firefox = require('selenium-webdriver/firefox');
 const safari = require('selenium-webdriver/safari');
 
-const BROWSER = 'safari';
+const BROWSER = 'chrome';
 
 let driver = new Builder()
   .forBrowser(BROWSER)
@@ -11,9 +11,8 @@ let driver = new Builder()
 
 (async function example() {
   try {
-    await driver.get('http://www.google.com/ncr');
-    await driver.findElement(By.name('q')).sendKeys('Wiris rulez', Key.RETURN);
-    await driver.wait(until.titleContains('Wiris'), 5000);
+    await driver.get('https://www.oriolgomez.com/');
+    await driver.wait(until.titleContains('Oriol'), 5000);
     console.log('found title');
 
 /*
