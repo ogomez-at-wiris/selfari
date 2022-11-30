@@ -11,7 +11,6 @@ let driver = new Builder()
 
 (async function example() {
   try {
-    const version = require('selenium-webdriver').getVersion()
     await driver.get('http://www.google.com/ncr');
     await driver.findElement(By.name('q')).sendKeys('Wiris rulez', Key.RETURN);
     await driver.wait(until.titleContains('Wiris'), 5000);
